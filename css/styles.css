@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
+:root {
+    --base-color: #3D5170;
+    --accent-color: #6f7276;
+}
+
 body {
     background-color: #FFFFFF;
-    color: #3d5170;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    color: var(--base-color);
+    font-family: arial, Helvetica, sans-serif;
     padding: 20px;
     
     display:flex;
@@ -19,17 +23,16 @@ body {
 }
 
 .sub-heading {
-    font-size: 1rem;
     letter-spacing: 8px;
     font-weight: 600;
-    color: #6f7276;
+    color: var(--accent-color);
 }
 
 a {
     text-decoration: none;
-    color: #3d5170;
+    color: var(--base-color);
     &:visited {
-        color: #3d5170;
+        color: var(--base-color);
     }
     &:hover {
         text-decoration: underline;
@@ -45,11 +48,11 @@ figure {
 figcaption {
     font-size:0.8rem;
     font-weight: 900;
-    color: #6f7276;
+    color: var(--accent-color);
     padding-top:3px;
 }
 
-footer p {
+footer {
     font-weight: bold;
 }
 
@@ -57,7 +60,7 @@ aside {
     max-width: 800px;
     padding-top:10px;
 	padding-bottom:10px;
-    border-top: dotted 2px #3d5170;
+    border-top: dotted 2px var(--base-color);
 	margin-top:10px;
 }
 
@@ -91,7 +94,7 @@ i {
 
 .nav-link:nth-of-type(3) {
     padding-left:20px;
-    border-left: 2px dotted #6f7276;
+    border-left: 2px dotted var(--accent-color);
 }
 
 .full-image {
