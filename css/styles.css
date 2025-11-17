@@ -4,8 +4,8 @@
     --base-color: #3D5170;
     --accent-color: #6f7276;
 }
-
-body {
+/* ---------------------------- */
+.g-base {
     background-color: #FFFFFF;
     color: var(--base-color);
     font-family: arial, Helvetica, sans-serif;
